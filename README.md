@@ -1,2 +1,2 @@
 # Tensorflow-ML-AP
-Tensorflow implementation for the book "Machine Learning: An Algorithmic Perspective"
+Tensorflow implementations for the examples from the book "Machine Learning: An Algorithmic Perspective" written by Stephen Marsland
