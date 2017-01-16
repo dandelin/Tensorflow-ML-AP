@@ -1,14 +1,10 @@
 import tensorflow as tf
-import matplotlib.pyplot as plt
-
 
 def sigmoid(z):
     return 1 / (1 + tf.exp(-z))
 
-
 def sigmoid_prime(z):
     return sigmoid(z) * (1 - sigmoid(z))
-
 
 def naive_mlp(NUM_HIDDEN, a_0, y):
     NUM_INPUT = 2
@@ -61,7 +57,6 @@ def naive_mlp(NUM_HIDDEN, a_0, y):
 
     return [step, cost]
 
-
 def built_in_mlp(NUM_HIDDEN, a_0, y):
     NUM_INPUT = 2
     NUM_OUTPUT = 1
@@ -90,9 +85,7 @@ def built_in_mlp(NUM_HIDDEN, a_0, y):
     
     return [step, cost]
 
-
 # DATA
-
 
 _in = [
     [0, 0],
@@ -108,7 +101,6 @@ _out = [
     [1],
     [0]
 ]
-
 
 a_0 = tf.placeholder(dtype=tf.float32, shape=[None, 2])
 y = tf.placeholder(dtype=tf.float32, shape=[None, 1])
